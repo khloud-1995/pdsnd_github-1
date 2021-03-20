@@ -65,7 +65,7 @@ def load_data(city, month, day):
     df['day']=df['Start Time'].dt.day_name()
     #print(df)
     if month == 'all' and day == 'all':
-     #print ("correct")   
+     #print ("correct")  this is used to check the result 
      return df
  
     elif month == 'all' and day !='all':
@@ -90,7 +90,7 @@ def time_stats(df):
     common_month=df['month_name'].mode()[0]
     print('the commonly month is : ', common_month )
 
-    # display the most common day of week
+    # display the most common day of week -> we used the mode to show the value 
     common_day=df['day'].mode()[0]
 
     # display the most common start hour
@@ -117,7 +117,7 @@ def station_stats(df):
     # display most commonly used end station
     commen_end_St=df['End Station'].mode()[0]
 
-    # display most frequent combination of start station and end station trip
+    # display most frequent combination of start station and end station trip -> we compine the stations to find the mode compination 
     df['Start_End_Stations']=(df['Start Station']+ ' - ' + df['End Station'])
     comment_start_end_St=df['Start_End_Stations'].mode()[0]
     
