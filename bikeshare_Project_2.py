@@ -90,7 +90,7 @@ def time_stats(df):
     common_month=df['month_name'].mode()[0]
     print('the commonly month is : ', common_month )
 
-    # display the most common day of week -> we used the mode to show the value 
+    # display the most common day of week 
     common_day=df['day'].mode()[0]
 
     # display the most common start hour
@@ -204,7 +204,7 @@ def Raw_Data(df):
   print("\nThis took %s seconds." % (time.time() - start_time))
   print('-'*40)
 
-
+# the main function call all the functions 
 
 def main():
     while True:
