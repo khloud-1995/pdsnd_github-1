@@ -8,6 +8,7 @@ bikeshere Project udacity
 
 ### Description
 this project contain information about my bikeshere db and how we used python to analyise the data .
+the bikeshare data file containe 3 excel files .
 
 ### Files used
 bikeshare_data.rar

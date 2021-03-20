@@ -24,7 +24,7 @@ def get_filters():
             print('Please Enter a Correct City ')
         else:
             break
-    # get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, february, ... , june) in small litters
     while True:
         month=input('Please choose the month you want information about from this list : all, january, february,merch ,april , may, june : ')
         month=month.lower()
